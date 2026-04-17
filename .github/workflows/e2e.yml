@@ -34,7 +34,7 @@ jobs:
 
       # Шаг 6: Запуск Postman коллекции
       - name: Run Postman Collection
-        run: newman run collections/Lesson_with_git.postman_collection.json -r htmlextra --reporter-htmlextra-export testResult/htmlreport.html
+        run: newman run ./collections/Lesson_with_git.postman_collection.json -r htmlextra --reporter-htmlextra-export testResult/htmlreport.html
 
       # Шаг 7: Сохранить отчет о выполнении
       - name: Upload Test Results
