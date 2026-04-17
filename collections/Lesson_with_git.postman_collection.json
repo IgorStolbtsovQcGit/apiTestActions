@@ -1,0 +1,52 @@
+{
+  "info": {
+    "_postman_id": "e7483735-8194-40b3-8c8c-97f16d302b8d",
+    "name": "Lesson_with_git",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "16647376",
+    "_collection_link": "https://go.postman.co/collection/16647376-e7483735-8194-40b3-8c8c-97f16d302b8d?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Create_account",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "accept",
+            "value": "application/json"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"John\",\r\n  \"lastName\": \"Dou\",\r\n  \"email\": \"test355g@test.com\",\r\n  \"password\": \"Qwerty11123459637772\",\r\n  \"repeatPassword\": \"Qwerty11123459637772\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://qauto.forstudy.space/api/auth/signup",
+          "protocol": "https",
+          "host": [
+            "qauto",
+            "forstudy",
+            "space"
+          ],
+          "path": [
+            "api",
+            "auth",
+            "signup"
+          ]
+        },
+        "description": "Generated from cURL: curl -X 'POST' \\\r\n  'https://qauto.forstudy.space/api/auth/signup' \\\r\n  -H 'accept: application/json' \\\r\n  -H 'Content-Type: application/json' \\\r\n  -d '{\r\n  \"name\": \"John\",\r\n  \"lastName\": \"Dou\",\r\n  \"email\": \"test1g@test.com\",\r\n  \"password\": \"Qwerty12345\",\r\n  \"repeatPassword\": \"Qwerty12345\"\r\n}'"
+      },
+      "response": []
+    }
+  ]
+}
